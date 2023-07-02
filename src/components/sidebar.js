@@ -5,22 +5,22 @@ import { LayoutGroup, motion } from 'framer-motion';
 import Image from 'next/image';
 
 const navItems = {
-  '/': {
+  '/epk/home': {
     name: 'home',
   },
-  '/bios-100': {
+  '/epk/bios/100': {
     name: 'bios',
   },
-  '/photos': {
+  '/epk/photos': {
     name: 'photos',
   },
-  '/videos': {
-    name: 'videos'
+  '/epk/videos': {
+    name: 'videos'  
   },
-  '/music': {
+  '/epk/music': {
     name: 'music',
   },
-  '/contact': {
+  '/epk/contact': {
     name: 'contact',
   }
 };
@@ -28,11 +28,8 @@ const navItems = {
 
 export default function Navbar() {
   let pathname = usePathname() || '/';
-  if (pathname.includes('/blog/')) {
-    pathname = '/blog';
-  }
-  if (pathname.includes('/bios-')) {
-    pathname = '/bios-100';
+  if (pathname.includes('/bios')) {
+    pathname = '/bios';
   }
   return (
     <aside className="font-['kaisei'] relative lg:w-[150px] lg:flex-shrink-0 -mx-4 lg:mx-0 lg:px-0 font-serif">
@@ -47,14 +44,14 @@ export default function Navbar() {
           >
             <div className="flex flex-row lg:flex-col -space-x-2 sm:space-x-0 pr-10 mb-2 mt-2 lg:mt-0">
               {Object.entries(navItems).map(([path, { name }]) => {
-                const isActive = path === pathname;
+                const isActive = path.includes(pathname);
                 return (
                   <Link
                     key={path}
                     href={path}
                     className={clsx(
                       'transition-all hover:text-neutral-200 flex align-middle',
-                      {
+                      { 
                         'text-neutral-500': !isActive,
                         'font-bold': isActive,
                       }
@@ -62,13 +59,13 @@ export default function Navbar() {
                   >
                     <span className="relative py-[5px] px-[10px]">
                       {name}
-                      {path === pathname ? (
+                      {isActive ? (
                         <motion.div
                           className="absolute inset-0 bg-neutral-800 rounded-md z-[-1]"
                           layoutId="sidebar"
                           transition={{
                             type: 'spring',
-                            stiffness: 350,
+                            stiffness: 600,
                             damping: 30,
                           }}
                         />

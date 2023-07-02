@@ -13,7 +13,7 @@ export default function Home() {
       <div className='relative top-0 left-0 flex flex-col  gap-y-2'>
         <h1 className='hidden lg:flex text-3xl'>Biographies</h1>
         <Biobar />
-        <p className='font-[ubuntu] italic max-w-2xl'>Biobiobiobiosvb bfshdu vfwbe vswebghjvbhyewuv fhsbjfhwsfvbryhewuv fsdjk hgvbhursov ksj hsnvcuipwnib g Biobiobiobiosvb bfshdu vfwbe vswebghjvbhyewuv fhsbjfhwsfvbryhewuv fsdjk hgvbhursov ksj hsnvcuipwnib g Biobiobiobiosvb bfshdu vfwbe vswebghjvbhyewuv fhsbjfhwsfvbryhewuv fsdjk hgvbhursov ksj hsnvcuipwnib g Biobiobiobiosvb bfshdu vfwbe vswebghjvbhyewuv fhsbjfhwsfvbryhewuv fsdjk hgvbhursov ksj hsnvcuipwnib g </p>
+        <p className='font-[ubuntu] italic max-w-2xl'>This will be a 100-word biography.  Right now it is not, however I am adding this text nonetheless so that the paragraph is wide enough to avoid messing up the formatting.</p>
       </div>
     </div>
   </>
