@@ -16,6 +16,11 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "cutout";
+  src: url('../../public/fonts/Magazine-Cutouts-Font.ttf');
+}
+
 ::selection {
   background-color: #df513e;
   color: #fefefe;
