@@ -1,59 +1,51 @@
-import Sidebar from '@/components/sidebar'
+import Header from '@/components/EpkHeader'
 import Head from 'next/head'
+import Link from 'next/link'
+import Footer from '@/components/EpkFooter'
+import EmailForm from '@/components/EmailForm'
 import Image from 'next/image'
-
-export default function Home() {
+export default function Music() {
   return (
   <>
     <Head>
       <title>music | The Dandy Buzzkills</title>
     </Head>
-    <div className='relative lg:top-32 lg:left-[4.5px] top-8 m-auto lg:flex w-4/5 lg:w-max font-[kaisei]'>
-      <Sidebar />
-      <div className='relative top-0 left-0 flex flex-col  gap-y-2'>
-        <h1 className='hidden lg:flex text-3xl'>Music</h1>
-        <div>
-          <div className='max-w-2xl flex flex-col w-max md:flex-row gap-x-8 font-[ubuntu] pr-28 py-8'>
-            <Image
-            src={'/iwanna.jpg'}
-            width={250}
-            height={250}
-            />
-            <ul className='flex flex-col gap-y-2'>
-            <li className='font-[kaisei] text-2xl'>i wanna...</li>
-              <li>Released: 2022 (Independant)</li>
-              <li>Written by Maxwell Adair</li>
-              <li>Produced by Maxwell and Hudson Adair</li>
-              <li className='flex gap-x-4'>Available on:
+    <div className='container mx-auto px-5'>
+      <Header />
+      <div className="flex flex-col lg:grid lg:grid-cols-2 md:gap-x-16 lg:gap-x-40 lg:my-20 lg:my-28">
+        <div className="rounded-lg shadow-xl flex flex-col md:flex-row gap-8 px-8 py-8 mb-8 bg-white hover:shadow-2xl">
+          <Image src={'/themoth.jpg'} width={250} height={250}/>
+          <div className='flex flex-col gap-3'>
+            <h1 className="text-2xl font-bold">The Moth (Single)</h1>
+            <p><span className='font-bold'>Released: </span>2023</p>
+            <p><span className='font-bold'>Written by: </span>Maxwell Adair</p>
+            <p><span className='font-bold'>Produced by: </span>Hudson Adair and Jon McNichol</p>
+            <p className='font-bold'>Available on:</p>
+              <div className='flex flex-row gap-4'>
                 <Image src={'/spotify.png'} width={30} height={30} />
                 <Image src={'/yt.png'} width={30} height={30} />
                 <Image src={'/drive.png'} width={30} height={30} />
-              </li>
-            </ul>
+              </div>
           </div>
-          <div className='max-w-2xl flex flex-col w-max md:flex-row gap-x-8 font-[ubuntu] pr-28 py-8'>
-            <Image
-            src={'/themoth.jpg'}
-            width={250}
-            height={250}
-            />
-            <ul className='flex flex-col gap-y-2'>
-            <li className='font-[kaisei] text-2xl'>The Moth</li>
-              <li>Released: 2023 (Independant)</li>
-              <li>Written by Maxwell Adair</li>
-              <li>Produced by Hudson Adair</li>
-              <li className='flex gap-x-4'>Available on:
+        </div>
+        <div className="rounded-lg shadow-xl flex flex-col md:flex-row gap-8 px-8 py-8 mb-8 bg-white hover:shadow-2xl">
+          <Image src={'/iwanna.jpg'} width={250} height={250}/>
+          <div className='flex flex-col gap-3'>
+            <h1 className="text-2xl font-bold">I Wanna... (Single)</h1>
+            <p><span className='font-bold'>Released: </span>2022</p>
+            <p><span className='font-bold'>Written by: </span>Maxwell Adair</p>
+            <p><span className='font-bold'>Produced by: </span>Hudson Adair</p>
+            <p className='font-bold'>Available on:</p>
+              <div className='flex flex-row gap-4'>
                 <Image src={'/spotify.png'} width={30} height={30} />
                 <Image src={'/yt.png'} width={30} height={30} />
                 <Image src={'/drive.png'} width={30} height={30} />
-              </li>
-            </ul>
+              </div>
           </div>
         </div>
       </div>
     </div>
+    <Footer/>
   </>
   )
-
-  //make it a polaroid
 }

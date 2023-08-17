@@ -1,34 +1,35 @@
-import Sidebar from '@/components/sidebar'
+import Header from '@/components/EpkHeader'
 import Head from 'next/head'
-import Image from 'next/image'
+import Link from 'next/link'
+import Footer from '@/components/EpkFooter'
+import EmailForm from '@/components/EmailForm'
 
 export default function Home() {
   return (
-  <>
+    <>
     <Head>
       <title>contact | The Dandy Buzzkills</title>
     </Head>
-    <div className='relative top-32 m-auto flex w-max font-[kaisei]'>
-      <Sidebar />
-      <div className='relative top-0 left-0 flex flex-col  gap-y-2'>
-        <h1 className='text-3xl'>Contact Us</h1>
-        <br/>
-        <p className='font-[ubuntu] max-w-2xl'>If you have any questions, answers, enquiries, inquiries or recipes for various baked goods which 
-        you think we should be privvy to, please feel free to reach out via any of the following routes:</p>
-        
-        <div className='pt-10 flex flex-row gap-8'>
-          <Image src='/yt.png'
-              width={45}
-              height={45}/>
-          <Image src='/ig.png'
-              width={45}
-              height={45}/>
-          <Image src='/email.png'
-              width={45}
-              height={45}/>
+    <div className='container mx-auto px-5'>
+      <Header />
+      <div className="md:grid md:grid-cols-2 min-h-[75vh] md:gap-x-16 lg:gap-x-40 md:my-20 md:my-28">
+        <div className='mb-8'>
+          <h3 className="mb-4 text-4xl lg:text-5xl leading-tight">
+            Contact Us
+          </h3>
+          <p className="text-lg leading-relaxed mb-4">
+          Please feel free to reach out via any of the following links to get in touch with us, or send us an email using the form on the right!
+          </p>
+          <div className='mt-8 flex flex-col'>
+            <Link href='https://www.instagram.com/dandybuzzkills/' target="_blank" className='hover:underline'>Instagram</Link>
+            <Link href='https://www.facebook.com/dandybuzzkills/' target="_blank" className='hover:underline'>Facebook</Link>
+          </div>
         </div>
+        <EmailForm/>
       </div>
+
     </div>
-  </>
+    <Footer/>
+    </>
   )
-}
+};

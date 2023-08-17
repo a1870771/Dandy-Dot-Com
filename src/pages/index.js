@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Landing from '@/components/Landing'
+import Construction from '@/components/UnderConstruction'
 export default function Home() {
   return (
   <>
@@ -7,7 +8,7 @@ export default function Home() {
       <title>home | The Dandy Buzzkills</title>
     </Head>
     <div className="bg-[#f6eee3]">
-      <Landing/>
+      <Construction/>
   </div>
   </>
   )
