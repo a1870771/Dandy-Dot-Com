@@ -19,12 +19,18 @@ export default function Music() {
             <h1 className="text-2xl font-bold">The Moth (Single)</h1>
             <p><span className='font-bold'>Released: </span>2023</p>
             <p><span className='font-bold'>Written by: </span>Maxwell Adair</p>
-            <p><span className='font-bold'>Produced by: </span>Hudson Adair and Jon McNichol</p>
+            <p><span className='font-bold'>Produced by: </span>Hudson Adair</p>
             <p className='font-bold'>Available on:</p>
               <div className='flex flex-row gap-4'>
+              <Link target='_blank' href='https://open.spotify.com/album/6au4gmLYwwy0VEvDwvh5yb?si=LHe3lotJTe6PF397etWVug'>
                 <Image src={'/spotify.png'} width={30} height={30} />
+              </Link>
+              <Link target='_blank' href='https://www.youtube.com/watch?v=VGzlfftcePA'>
                 <Image src={'/yt.png'} width={30} height={30} />
+              </Link>
+              <Link target='_blank' href=''>
                 <Image src={'/drive.png'} width={30} height={30} />
+              </Link>
               </div>
           </div>
         </div>
@@ -37,9 +43,15 @@ export default function Music() {
             <p><span className='font-bold'>Produced by: </span>Hudson Adair</p>
             <p className='font-bold'>Available on:</p>
               <div className='flex flex-row gap-4'>
+              <Link target='_blank' href='https://open.spotify.com/album/0cjJQJPYPtacba51SqFxDX?si=6gAEeb4fT2uIToPRfCTyKw'>
                 <Image src={'/spotify.png'} width={30} height={30} />
+              </Link>
+              <Link target='_blank' href='https://www.youtube.com/watch?v=taGFpqu6WEs'>
                 <Image src={'/yt.png'} width={30} height={30} />
+              </Link>
+              <Link target='_blank' href=''>
                 <Image src={'/drive.png'} width={30} height={30} />
+              </Link>
               </div>
           </div>
         </div>
