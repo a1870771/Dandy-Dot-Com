@@ -6,7 +6,7 @@ export default function Home() {
     <Head>
       <title>home | The Dandy Buzzkills</title>
     </Head>
-    <div className="bg-white">
+    <div className="bg-[#f6eee3]">
       <Landing/>
   </div>
   </>

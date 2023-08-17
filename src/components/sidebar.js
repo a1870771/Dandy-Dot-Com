@@ -33,9 +33,9 @@ export default function Navbar() {
   }
   return (
     <aside className="font-['kaisei'] relative lg:w-[150px] lg:flex-shrink-0 -mx-4 lg:mx-0 lg:px-0 font-serif">
-      <div className="lg:sticky lg:top-20">
-        <div className="ml-2 lg:ml-[12px] mb-2 px-4 lg:px-0 lg:mb-8 space-y-10 flex flex-col lg:flex-row items-start ">
-            <Image src='/japan.png' href='/' width={85} height={85} className='relative -left-3'/>
+      <div className="lg:sticky lg:top-8">
+        <div className="ml-2 mb-4 px-4 lg:px-0 space-y-10 flex flex-col lg:flex-row items-start ">
+            <Image src='/japan.png' href='/' width={120} height={120} className='relative -left-3'/>
         </div>
         <LayoutGroup>
           <nav
