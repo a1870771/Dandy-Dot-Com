@@ -62,12 +62,12 @@ export default function Home() {
           </div>
         </div>
         <div className="rounded-lg shadow-xl flex flex-col gap-8 px-8 py-8 mb-8 bg-white hover:shadow-2xl">
-          <ReactPlayer url='https://www.youtube.com/watch?v=yhmhQLDUZnM' width="[100vw]"  controls='true'/>
+          <ReactPlayer url='https://www.youtube.com/watch?v=Q_4eiMbLQu8' width="[100vw]"  controls='true'/>
           <div className='flex flex-col gap-3'>
-            <h1 className="text-2xl font-bold">The Moth, live at Unibar</h1>
-            <p><span className='font-bold'>Recorded: </span>Feb 2023</p>
-            <p><span className='font-bold'>Shot by: </span>Spoz Spozington</p>
-            <p><span className='font-bold'>Songs: </span>The Moth</p>
+            <h1 className="text-2xl font-bold">Golden Brown (The Stranglers), live at Arthurs Art Bar</h1>
+            <p><span className='font-bold'>Recorded: </span>April 2023</p>
+            <p><span className='font-bold'>Shot by: </span>@valshootspeople</p>
+            <p><span className='font-bold'>Songs: </span>Golden Brown</p>
             <p className='font-bold'>Mp4 available upon request</p>
           </div>
         </div>
