@@ -28,9 +28,9 @@ export default function Music() {
               <Link target='_blank' href='https://www.youtube.com/watch?v=VGzlfftcePA'>
                 <Image src={'/yt.png'} width={30} height={30} />
               </Link>
-              <Link target='_blank' href=''>
+              {/*<Link target='_blank' href=''>
                 <Image src={'/drive.png'} width={30} height={30} />
-              </Link>
+              </Link>*/}
               </div>
           </div>
         </div>
@@ -49,9 +49,9 @@ export default function Music() {
               <Link target='_blank' href='https://www.youtube.com/watch?v=taGFpqu6WEs'>
                 <Image src={'/yt.png'} width={30} height={30} />
               </Link>
-              <Link target='_blank' href=''>
+              {/*<Link target='_blank' href=''>
                 <Image src={'/drive.png'} width={30} height={30} />
-              </Link>
+              </Link>*/}
               </div>
           </div>
         </div>
