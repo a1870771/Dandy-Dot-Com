@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Footer from '@/components/EpkFooter'
 import EmailForm from '@/components/EmailForm'
+import LowerNav from '@/components/EpkLowerNavbar'
 
 export default function Home() {
   return (
@@ -10,9 +11,9 @@ export default function Home() {
     <Head>
       <title>contact | The Dandy Buzzkills</title>
     </Head>
-    <div className='container mx-auto px-5'>
+    <div className='bg-[#e8e4dd]'>
       <Header />
-      <div className="md:grid md:grid-cols-2 min-h-[75vh] md:gap-x-16 lg:gap-x-40 md:my-20 md:my-28">
+      <div className="md:grid md:grid-cols-2 min-h-[75vh] md:gap-x-16 lg:gap-x-40 md:py-20 px-32">
         <div className='mb-8'>
           <h3 className="mb-4 text-4xl lg:text-5xl leading-tight">
             Contact Us
@@ -29,6 +30,7 @@ export default function Home() {
       </div>
 
     </div>
+    <LowerNav/>
     <Footer/>
     </>
   )

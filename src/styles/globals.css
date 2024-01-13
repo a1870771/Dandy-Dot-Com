@@ -7,6 +7,16 @@
   src: url('../../public/fonts/Magazine-Cutouts-Font.ttf');
 }
 
+@font-face {
+  font-family: "bold";
+  src: url('../../public/fonts/alte-haas-grotesk.bold.ttf')
+}
+
+@font-face {
+  font-family: "regular";
+  src: url('../../public/fonts/alte-haas-grotesk.regular.ttf')
+}
+
 ::selection {
   background-color: #df513e;
   color: #fefefe;

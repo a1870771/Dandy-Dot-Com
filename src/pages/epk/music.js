@@ -4,16 +4,18 @@ import Link from 'next/link'
 import Footer from '@/components/EpkFooter'
 import EmailForm from '@/components/EmailForm'
 import Image from 'next/image'
+import LowerNav from '@/components/EpkLowerNavbar'
 export default function Music() {
   return (
   <>
     <Head>
       <title>music | The Dandy Buzzkills</title>
     </Head>
-    <div className='container mx-auto px-5'>
+    <div className='bg-[#e8e4dd]' >
       <Header />
-      <div className="flex flex-col lg:grid lg:grid-cols-2 md:gap-x-16 lg:gap-x-40 lg:my-20 lg:my-28">
-        <div className="rounded-lg shadow-xl flex flex-col md:flex-row gap-8 px-8 py-8 mb-8 bg-white hover:shadow-2xl">
+      <p className='text-5xl pt-8 text-center font-[bold]'>Music</p>
+      <div className="flex flex-col lg:grid lg:grid-cols-2 md:gap-x-16 lg:gap-x-40 lg:pt-20 lg:py-16  mx-32">
+        <div className="rounded-lg shadow-xl flex flex-col md:flex-row gap-8 px-8 py-8 mb-8 bg-[white] hover:shadow-2xl">
           <Image src={'/themoth.jpg'} width={250} height={250}/>
           <div className='flex flex-col gap-3'>
             <h1 className="text-2xl font-bold">The Moth (Single)</h1>
@@ -57,6 +59,7 @@ export default function Music() {
         </div>
       </div>
     </div>
+    <LowerNav/>
     <Footer/>
   </>
   )

@@ -9,19 +9,30 @@ export default function Navbar()  {
   const toggleMenu = () => setOpen(!isOpen);
 
   return (
-      <header className="text-gray-500 relative bg-white">
+      <header className="text-white relative">
         <div className="max-w-[70vw] py-4 px-4 sm:px-6">
           <div className="-mr-2 -ml-3 -my-16 md:hidden">
             <button onClick={toggleMenu} className="inline-flex items-center justify-center">
               <Image src='/menu.png' width='50' height='100' />
             </button>
           </div>
-          <nav className="hidden md:flex flex-row space-x-20 justify-center">
-              <Link className="hover:text-gray-800" href="/epk/home">Home</Link>
-              <Link className="hover:text-gray-800" href="/epk/bio">Biographies</Link>
-              <Link className="hover:text-gray-800" href="/epk/music">Music</Link>
-              <Link className="hover:text-gray-800" href="/epk/media">Media</Link>
-              <Link className="hover:text-gray-800" href="/epk/contact">Contact Us</Link>
+          <nav className="hidden md:flex text-[25px] font-bold flex-row space-x-16 justify-center">
+            <span><Link className="hover:text-gray-300 mx-2" href="/epk/home">Home</Link> | 
+            <Link className="hover:text-gray-300 mx-2" href="/epk/bio">Biographies</Link> | 
+            <Link className="hover:text-gray-300 mx-2" href="/epk/music">Music</Link> | 
+            <Link className="hover:text-gray-300 mx-2" href="/epk/media">Media</Link> | 
+            <Link className="hover:text-gray-300 mx-2" href="/epk/contact">Contact</Link></span>
+
+            <span className='flex flex-row space-x-2'><Link target='_blank' href='https://open.spotify.com/album/6au4gmLYwwy0VEvDwvh5yb?si=LHe3lotJTe6PF397etWVug'>
+              <Image src={'/spotify.png'} width={30} height={30} />
+            </Link>
+            <Link target='_blank' href='https://www.youtube.com/watch?v=VGzlfftcePA'>
+              <Image src={'/yt.png'} width={30} height={30} />
+            </Link>
+            <Link target='_blank' href='https://open.spotify.com/album/6au4gmLYwwy0VEvDwvh5yb?si=LHe3lotJTe6PF397etWVug'>
+              <Image src={'/spotify.png'} width={30} height={30} />
+            </Link></span>
+
           </nav>
       </div>
 
