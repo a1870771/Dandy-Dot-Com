@@ -23,14 +23,14 @@ export default function Navbar()  {
             <Link className="hover:text-gray-300 mx-2" href="/epk/media">Media</Link> | 
             <Link className="hover:text-gray-300 mx-2" href="/epk/contact">Contact</Link></span>
 
-            <span className='flex flex-row space-x-2'><Link target='_blank' href='https://open.spotify.com/album/6au4gmLYwwy0VEvDwvh5yb?si=LHe3lotJTe6PF397etWVug'>
-              <Image src={'/spotify.png'} width={30} height={30} />
+            <span className='flex flex-row space-x-8'><Link target='_blank' href='mailto:dandybuzzkills@gmail.com'>
+              <Image className="mt-1"src={'/mail.png'} width={30} height={30} />
             </Link>
-            <Link target='_blank' href='https://www.youtube.com/watch?v=VGzlfftcePA'>
-              <Image src={'/yt.png'} width={30} height={30} />
+            <Link target='_blank' href='https://www.instagram.com/dandybuzzkills/'>
+              <Image src={'/instagram.png'} width={30} height={30} />
             </Link>
-            <Link target='_blank' href='https://open.spotify.com/album/6au4gmLYwwy0VEvDwvh5yb?si=LHe3lotJTe6PF397etWVug'>
-              <Image src={'/spotify.png'} width={30} height={30} />
+            <Link target='_blank' href='https://www.facebook.com/dandybuzzkills/'>
+              <Image src={'/facebook.png'} width={30} height={30} />
             </Link></span>
 
           </nav>

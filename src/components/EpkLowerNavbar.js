@@ -10,30 +10,28 @@ export default function LowerNav() {
       <div className='flex flex-col space-y-8'>
         <div className='flex flex-row space-x-8'>
           <div className='flex flex-col'>
-            <p>Home</p>
-            <p>Biographies</p>
-            <p>Music</p>
+            <Link className="hover:text-gray-300 mx-2" href="/epk/home">Home</Link> 
+            <Link className="hover:text-gray-300 mx-2" href="/epk/bio">Biographies</Link>
+            <Link className="hover:text-gray-300 mx-2" href="/epk/music">Music</Link>
           </div>
           <div className='flex flex-col'>
-            <p>Media</p>
-            <p>Contact</p>
+            <Link className="hover:text-gray-300 mx-2" href="/epk/media">Media</Link>
+            <Link className="hover:text-gray-300 mx-2" href="/epk/contact">Contact</Link>
           </div>
         </div>
         <div className='flex flex-col space-y-1'>
           <div className='flex flex-row'>
-            <Image src={'/spotify.png'} width={20} height={20} />
             <p>dandybuzzkills@gmail.com</p>
           </div>
           <div className='flex flex-row'>
-            <Image src={'/spotify.png'} width={20} height={20} />
             <p>thedandybuzzkills.com.au</p>
           </div>
           <div className='flex flex-row'>
-            <Image src={'/spotify.png'} width={20} height={20} />
+            <Image src={'/instagram.png'} width={20} height={20} />
             <p>@DandyBuzzkills</p>  
           </div>
           <div className='flex flex-row'>
-            <Image src={'/spotify.png'} width={20} height={20} />
+            <Image src={'/facebook.png'} width={20} height={20} />
             <p>@DandyBuzzkills</p>       
           </div>
         </div>
@@ -44,3 +42,9 @@ export default function LowerNav() {
     </div>
   );
 }
+
+
+
+
+             
+             
