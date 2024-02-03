@@ -13,13 +13,13 @@ export default function Home() {
     </Head>
     <div className='bg-[#e8e4dd]'>
       <Header />
-      <div className="md:grid md:grid-cols-2 min-h-[75vh] md:gap-x-16 lg:gap-x-40 md:py-20 px-32">
+      <div className="md:grid md:grid-cols-2 min-h-[75vh] md:gap-x-16 lg:gap-x-40 py-4 lg:py-20 px-4 lg:px-32">
         <div className='mb-8'>
           <h3 className="mb-4 text-4xl lg:text-5xl leading-tight">
             Contact Us
           </h3>
           <p className="text-lg leading-relaxed mb-4">
-          Please feel free to reach out via any of the following links to get in touch with us, or send us an email using the form on the right!
+          Please feel free to reach out via any of the following links to get in touch with us, or send us an email using the following form.
           </p>
           <div className='mt-8 flex flex-col'>
             <Link href='https://www.instagram.com/dandybuzzkills/' target="_blank" className='hover:underline'>Instagram</Link>

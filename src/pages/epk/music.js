@@ -13,9 +13,9 @@ export default function Music() {
     </Head>
     <div className='bg-[#e8e4dd]' >
       <Header />
-      <p className='text-5xl pt-8 text-center font-[bold]'>Music</p>
-      <div className="flex flex-col lg:grid lg:grid-cols-2 md:gap-x-16 lg:gap-x-40 lg:pt-20 lg:py-16  mx-32">
-        <div className="rounded-lg shadow-xl flex flex-col md:flex-row gap-8 px-8 py-8 mb-8 bg-[white] hover:shadow-2xl">
+      <p className='text-5xl py-8 text-center font-[bold]'>Music</p>
+      <div className="flex flex-col lg:grid lg:grid-cols-2 md:gap-x-16 lg:gap-x-40 lg:pt-20 lg:py-16 mx-8 lg:mx-32">
+        <div className="rounded-lg shadow-xl flex flex-col md:flex-row gap-8 px-8 py-8 mb-8 bg-[white] items-center hover:shadow-2xl">
           <Image src={'/themoth.jpg'} width={250} height={250}/>
           <div className='flex flex-col gap-3'>
             <h1 className="text-2xl font-bold">The Moth (Single)</h1>
@@ -36,7 +36,7 @@ export default function Music() {
               </div>
           </div>
         </div>
-        <div className="rounded-lg shadow-xl flex flex-col md:flex-row gap-8 px-8 py-8 mb-8 bg-white hover:shadow-2xl">
+        <div className="rounded-lg shadow-xl flex flex-col md:flex-row gap-8 px-8 py-8 mb-8 bg-white items-center hover:shadow-2xl">
           <Image src={'/iwanna.jpg'} width={250} height={250}/>
           <div className='flex flex-col gap-3'>
             <h1 className="text-2xl font-bold">I Wanna... (Single)</h1>
