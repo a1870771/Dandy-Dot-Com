@@ -67,7 +67,7 @@ export default function Home() {
         </div>
       </div>
       <h1 className='text-5xl text-center font-bold'>Videos</h1>
-    <div className="flex flex-col lg:grid lg:grid-cols-2 md:gap-x-16 lg:gap-x-40 lg:my-16 mx-32">
+    <div className="flex flex-col lg:grid lg:grid-cols-2 md:gap-x-16 lg:gap-x-40 lg:pb-8 mx-32">
         <div className="rounded-lg shadow-xl flex flex-col gap-8 px-8 py-8 mb-8 bg-white hover:shadow-2xl">
           <ReactPlayer url='https://www.youtube.com/watch?v=_N1oRGqPHZ4' width="[100vw]" controls='true'/>
           <div className='flex flex-col gap-3'>
