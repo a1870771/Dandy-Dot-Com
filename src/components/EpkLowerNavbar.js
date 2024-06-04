@@ -3,19 +3,13 @@ import Image from "next/image";
 
 export default function LowerNav() {
   return(
-    <div className="bg-[#222222] py-16 text-[16px] text-[#e8e4dd] flex flex-row justify-around items-center px-16">
-     
-
-
-
-
-
+    <div className="bg-[#222222] py-16 text-[16px] text-[#e8e4dd] flex flex-row justify-around items-center px-4">
       <div className="hidden lg:flex">
         <Image src={'/logowhite.png'} width='450' height='300'/>
       </div>
 
       <div className='flex flex-col space-y-8'>
-        <div className='flex flex-row space-x-8'>
+        <div className='flex flex-row space-x-20'>
           <div className='flex flex-col'>
             <Link className="hover:text-gray-300 mx-r" href="/epk/home">Home</Link> 
             <Link className="hover:text-gray-300 mx-r" href="/epk/bio">Biographies</Link>
